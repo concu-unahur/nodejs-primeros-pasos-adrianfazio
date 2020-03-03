@@ -14,6 +14,6 @@ function calcularSiguienteEImprimir(elDoble){
   siguiente(elDoble, imprimir)
 }
 
-siguiente(7, imprimir)
-doble(7, imprimir)
-doble(7, calcularSiguienteEImprimir)
+siguiente(8, imprimir)
+doble(8, imprimir)
+doble(8, calcularSiguienteEImprimir)
