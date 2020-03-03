@@ -2,6 +2,18 @@ function siguiente(x, done) {
   done(x + 1)
 }
 
-siguiente(2, resultado => { 
-  console.log('Siguiente de 8 =>', resultado)
-})
+function doble(x, done) {
+  done(x * 2)
+}
+
+function imprimir(resultado) {
+  console.log('El resultado =>', resultado)
+}
+
+function calcularSiguienteEImprimir(elDoble){
+  siguiente(elDoble, imprimir)
+}
+
+siguiente(7, imprimir)
+doble(7, imprimir)
+doble(7, calcularSiguienteEImprimir)
